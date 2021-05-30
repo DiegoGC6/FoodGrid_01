@@ -1,0 +1,66 @@
+
+GET http://localhost:3001/users
+
+###
+
+GET http://localhost:3001/items/skape
+
+###
+
+GET http://localhost:3001/items/60b2c08c1e826c69b4a38be3
+
+
+###
+POST http://localhost:3001/items/
+Content-Type: application/json
+
+ {
+    "itemName": "Blue ",
+    "itemSize": "huge",
+    "itemQuantity": 24,
+    "userName": "team"
+  }
+
+###
+
+Delete http://localhost:3001/users/60b25c0dbb673832bc0c4c8d
+
+###
+
+PUT  http://localhost:3001/items/60a446d92d7f9f15b8641a23
+Content-Type: application/json
+
+ {
+    "itemName": "Not required",
+    "itemSize": "Large",
+    "itemQuantity": 24
+  }
+
+
+###
+
+PUT  http://localhost:3001/users/60b25c0dbb673832bc0c4c8d
+Content-Type: application/json
+
+ {
+    "userName": "yesssss",
+    "email": "notmyemail@login.com",
+    "password": "YoY1122",
+    "phoneNumber": "9555555555",
+    "communityName": "Castleridge",
+    "contactMethod": "phone"
+  }
+
+###
+
+PUT  http://localhost:3001/users/60a452c63f4ecb28848332a7
+Content-Type: application/json
+
+ {
+    "userName": "OraNGE",
+    "email": "Large",
+    "password": "YoY1122",
+    "phoneNumber": "9555555555",
+    "communityName": "Falconridge",
+    "contactMethod": "phone"
+  }

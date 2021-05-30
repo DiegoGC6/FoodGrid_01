@@ -1,0 +1,14 @@
+.body{
+  background: linear-gradient(to left, rgb(151, 0, 0), rgb(251, 47, 47) 50%, rgb(141, 98, 98) 75%);
+}
+.Container{
+    margin: 10px auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ababab;
+}
+.Margin{
+  padding-top: 10px;
+  padding-left: 475px;
+}
