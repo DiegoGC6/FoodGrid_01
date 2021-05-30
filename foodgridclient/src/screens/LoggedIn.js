@@ -4,22 +4,21 @@ import {Row, Container, Image} from 'react-bootstrap'
 import '../components/containers.css'
 import AboutUs from '../components/AboutUs'
 
-function Home() {
+function LoggedIn() {
   return (
     <>
     <body className="body">
-      <Row className="Margin">
-        <AboutUs />
-        <AboutUs />
-        <AboutUs />
-        <AboutUs />
+      <Row className="Container">
+        <CardOne />
+        <CardOne />
+        <CardOne />
+        <CardOne />
+        <CardOne />
+        <CardOne />
       </Row>
-    </body>
-    <Container>
-      <h2>PLEASE LOG IN GUYS AND TRY IT OUT</h2>
-    </Container>    
+    </body>    
     </> 
   )
 }
 
-export default Home
+export default LoggedIn

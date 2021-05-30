@@ -1,5 +1,6 @@
 .body{
   background: linear-gradient(to left, rgb(151, 0, 0), rgb(251, 47, 47) 50%, rgb(141, 98, 98) 75%);
+  padding-bottom: 0%;
 }
 .Container{
     margin: 10px auto;

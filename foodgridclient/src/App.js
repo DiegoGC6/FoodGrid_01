@@ -9,7 +9,7 @@ import ListItems from './components/ListItems'
 import Home from './screens/Home'
 import Header from './components/Header'
 import OurChat from './screens/OurChat'
-import DisplayNewPost from './components/DisplayNewPost'
+import LoggedIn from './screens/LoggedIn'
 
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
         <Header />
           <Switch>
             <Route path='/' exact component={Home} />
+            <Route path='/loggedIn' exact component={LoggedIn} />
             <Route path='/login' exact component={Login} />
             <Route path='/register' exact component={UserRegistration} />
             <Route path='/listitems' exact component={ListItems} />
             <Route path='/additem' exact component={AddItem} />
             <Route path='/chat' exact component={OurChat} />
-            <Route path='/mypost' exact component={DisplayNewPost} />
           </Switch>
       </Router>
       

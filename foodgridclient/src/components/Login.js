@@ -30,7 +30,7 @@ function LoginUser() {
     //   itemQuantity: item.itemQuantity,
     // };
     axios.get('/', LogInUser) //put new item here
-    history.push("/")
+    history.push("/LoggedIn")
   }
   return (
     <Container className="Container">
