@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import axios from 'axios'
-import { Button, LinkContainer } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
+import '../components/containers.css'
 
 //import "./AddItem.css";
 
@@ -40,62 +41,88 @@ function AddItem() {
   }
 
   return (
-    <div class='AddItem-box'>
-      <h2>Add Item</h2>
-      <form>
-        <div class='User-box'>
-          <label htmlFor='itemName'>Name</label>
-          <input
-            onChange={handleChange}
-            name='itemName'
-            placeholder='item name'
-            value={item.itemName}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='itemSize'>Size</label>
-          <input
-            onChange={handleChange}
-            name='itemSize'
-            placeholder='item size'
-            value={item.itemSize}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='itemQuantity'>Quantity</label>
-          <input
-            onChange={handleChange}
-            name='itemQuantity'
-            placeholder='item quantity'
-            value={item.itemQuantity}
-            type='number'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='userName'>User Name</label>
-          <input
-            onChange={handleChange}
-            name='userName'
-            placeholder='User Name'
-            value={item.userName}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='expiryDate'>Expiry Date</label>
-          <input
-            onChange={handleChange}
-            name='expiryDate'
-            placeholder='expiry Date'
-            value={item.expiryDate}
-            type='date'
-          ></input>
-        </div>
-        <Button onClick={addItem}>Submit</Button>
-      </form>
-    </div>
+    <Container className="Container2">  
+      <div class='Registration-box'>
+        <div>  
+          <h2 style={{textAlign: "center"}}>Add Item</h2>
+          </div>
+        <form>
+        <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>Name</label>
+            </div>
+            <input style={{textAlign: "center"}}
+              onChange={handleChange}
+              name='itemName'
+              placeholder='item name'
+              value={item.itemName}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='itemSize'>Size</label>
+            </div>
+            <input style={{textAlign: "center"}}
+              onChange={handleChange}
+              name='itemSize'
+              placeholder='item size'
+              value={item.itemSize}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='itemQuantity'>Quantity</label>
+            </div>
+            <input style={{textAlign: "center"}}
+              onChange={handleChange}
+              name='itemQuantity'
+              placeholder='item Quantity'
+              value={item.itemQuantity}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>User Name</label>
+            </div>
+            <input style={{textAlign: "center"}}
+              onChange={handleChange}
+              name='userName'
+              placeholder='user name'
+              value={item.userName}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='expiryDate'>Expiry Date</label>
+            </div>
+            <input style={{textAlign: "center"}}
+              onChange={handleChange}
+              name='expiryDate'
+              placeholder='item name'
+              value={item.expiryDate}
+              type='date'
+            ></input>
+          </div>
+          </div>
+             <div style={{textAlign: "center"}}>
+           <Button onClick={addItem}>Submit</Button>
+           </div>
+        </form>
+      </div>
+    </Container>  
   )
 }
 

@@ -33,7 +33,8 @@ function LoginUser() {
     history.push("/LoggedIn")
   }
   return (
-    <Container className="Container">
+    
+    <Container className="Container2">
     <form>
   <section>
   <div class="form-group">
@@ -67,6 +68,7 @@ function LoginUser() {
   </div>  
 </form>
 </Container>
+
   )
 }
 

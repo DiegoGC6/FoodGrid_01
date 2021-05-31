@@ -1,9 +1,9 @@
 // import React from 'react'
 import React, { useState } from 'react'
 import axios from 'axios'
-import { Button } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
-//import "./Registration.css";
+import '../components/containers.css'
 
 function AddUser() {
   const history = useHistory()
@@ -43,72 +43,102 @@ function AddUser() {
   }
 
   return (
-    <div class='Registration-box'>
-      <h2>Sign Up</h2>
-      <form>
-        <div class='User-box'>
-          <label htmlFor='userName'>User Name</label>
-          <input
-            onChange={handleChange}
-            name='userName'
-            placeholder='name'
-            value={user.userName}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='email'>Email</label>
-          <input
-            onChange={handleChange}
-            type='email'
-            name='email'
-            placeholder='email'
-            value={user.email}
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='password'>Password</label>
-          <input
-            onChange={handleChange}
-            type='password'
-            name='password'
-            placeholder='password'
-            value={user.password}
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='PhoneNumber'>Phone Number</label>
-          <input
-            onChange={handleChange}
-            name='phoneNumber'
-            placeholder='phone number'
-            value={user.phoneNumber}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='communityName'>Community Name</label>
-          <input
-            onChange={handleChange}
-            name='communityName'
-            placeholder='Community'
-            value={user.communityName}
-            type='text'
-          ></input>
-        </div>
-        <div class='User-box'>
-          <label htmlFor='ContactMethod'>Contact Method</label>
-          <input
-            onChange={handleChange}
-            name='contactMethod'
-            placeholder='Contact Method'
-            value={user.contactMethod}
-            type='text'
-          ></input>
-        </div>
-        <Button onClick={addUser}>Submit</Button>
-      </form>
-    </div>
+    <Container className="Container2">
+      <div class='Registration-box'>
+        <div>
+          <h2 style={{textAlign: "center"}}>Sign Up</h2>
+        </div>  
+        <form>
+        <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+            <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>User Name</label>
+            </div>
+            <input
+              onChange={handleChange}
+              name='userName'
+              style={{textAlign: "center"}} placeholder='name'
+              value={user.userName}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>  
+          <div class='User-box'>
+          <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>Email</label>
+            </div>
+            <input
+              onChange={handleChange}
+              type='email'
+              name='email'
+              style={{textAlign: "center"}} placeholder='email'
+              value={user.email}
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>
+          <div class='User-box'>
+          <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>Password</label>
+          </div>
+            <input
+              onChange={handleChange}
+              type='password'
+              name='password'
+              style={{textAlign: "center"}} placeholder='password'
+              value={user.password}
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>
+          <div class='User-box'>
+          <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>Phone Number</label>
+          </div>
+            <input
+              onChange={handleChange}
+              name='phoneNumber'
+              style={{textAlign: "center"}} placeholder='phone number'
+              value={user.phoneNumber}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>
+          <div class='User-box'>
+          <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>community Name</label>
+            </div>
+            <input
+              onChange={handleChange}
+              name='communityName'
+              style={{textAlign: "center"}} placeholder='Community'
+              value={user.communityName}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "inherit"}}>
+          <div class='User-box'>
+          <div style={{textAlign: "center"}}>
+              <label htmlFor='userName'>contact Method</label>
+            </div>
+            <input
+              onChange={handleChange}
+              name='contactMethod'
+              style={{textAlign: "center"}} placeholder='Contact Method'
+              value={user.contactMethod}
+              type='text'
+            ></input>
+          </div>
+          </div>
+          <div style={{textAlign: "center"}}>
+          <Button onClick={addUser}>Submit</Button>
+          </div>
+        </form>
+      </div>
+      </Container>  
   )
 }
 

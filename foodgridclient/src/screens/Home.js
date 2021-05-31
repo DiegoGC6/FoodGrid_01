@@ -7,17 +7,12 @@ import AboutUs from '../components/AboutUs'
 function Home() {
   return (
     <>
-    <body className="body">
       <Row className="Margin">
         <AboutUs />
         <AboutUs />
         <AboutUs />
         <AboutUs />
-      </Row>
-    </body>
-    <Container>
-      <h2>PLEASE LOG IN GUYS AND TRY IT OUT</h2>
-    </Container>    
+      </Row>    
     </> 
   )
 }
