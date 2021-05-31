@@ -42,7 +42,7 @@ const Header = () => {
               </LinkContainer>
               <LinkContainer to='/additem'>
                 <Nav.Link>
-                  <i className='fas fa-plus'></i>Add Items
+                  <i className='fas fa-plus'></i>Post Item
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/chat'>

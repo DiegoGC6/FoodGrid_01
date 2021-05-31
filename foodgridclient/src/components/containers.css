@@ -1,5 +1,5 @@
 .Body{
-  background: linear-gradient(to left, rgb(151, 0, 0),rgb(250, 164, 164) 50%, rgb(250, 164, 164) 50%, rgb(151, 0, 0) 75%);
+  background: linear-gradient(to left, rgb(51, 219, 248),rgb(197, 238, 240) 50%, rgb(197, 238, 240) 50%, rgb(51, 219, 248) 75%);
   padding-bottom: 0%;
 }
 .Container{
@@ -17,8 +17,9 @@
 .Container2{
   margin: 200px;
   height: 425PX;
-  width: 10PX;
+  
   display: flex;
+  width: 5rem;
   justify-content: center;
   background-color: #ababab;
   }
