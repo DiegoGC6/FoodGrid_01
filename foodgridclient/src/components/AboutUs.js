@@ -16,18 +16,16 @@ function AboutUs () {
 
         <section class="jumbotron text-center">
           <div class="container">
-            <h1 class="jumbotron-heading">Album example</h1>
+            <h1 class="jumbotron-heading">FoodGrid</h1>
             <p class="lead text-muted">
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don't simply skip over it entirely.
+              FoodGrid, a solution to share food before it goes to waste.
             </p>
             <p>
               <a href="#" class="btn btn-primary my-2">
-                Main call to action
+                DONATE NOW
               </a>
               <a href="#" class="btn btn-secondary my-2">
-                Secondary action
+                IN NEED?
               </a>
             </p>
           </div>
@@ -35,7 +33,7 @@ function AboutUs () {
         <div class="album py-5 bg-light">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              {/* <div class="col-md-4">
                 <div>
                   <img
                     class="card-img-top"
@@ -66,6 +64,20 @@ function AboutUs () {
                     </div>
                   </div>
                 </div>
+              </div> */}
+              <div class="col-md-4">
+                <div>
+                  <img
+                    class="card-img-top"
+                    src={kinhhypicture}
+                    alt="Card image cap"
+                  ></img>
+                  <div class="card-body">
+                    <h3>KinhHy Chau</h3>
+                    <p class="card-text">A newbie of Web developer world. A member of Cohort 6 now</p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
               </div>
               <div class="col-md-4">
                 <div>
@@ -77,23 +89,7 @@ function AboutUs () {
                   <div class="card-body">
                     <h3>Diego Gomez</h3>
                     <p class="card-text">Diego is a learner at EvolveU</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
+                    <div class="d-flex justify-content-between align-items-center"></div>
                   </div>
                 </div>
               </div>
@@ -109,26 +105,8 @@ function AboutUs () {
                   <div class="card-body">
                     <h3>Marc Ranger</h3>
                     <p class="card-text">
-                      Marc Ranger: A senior IT professional with over 25 years
-                      experience.
+                      A senior IT professional with over 25 years experience.
                     </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -139,30 +117,12 @@ function AboutUs () {
                     src={markpicture}
                     alt="Card image cap"
                   ></img>
-                  <h3>Mark Peterson</h3>
                   <div class="card-body">
+                    <h3>Mark Peterson</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      -----------------------------
                     </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
+
                   </div>
                 </div>
               </div>

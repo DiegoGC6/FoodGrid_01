@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
 
-console.log("User.js has been called");
+// console.log("User.js has been called");
 
 router.get("/", async (req, res) => {
   try {
