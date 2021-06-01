@@ -1,12 +1,16 @@
-// import React from 'react'
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import '../components/containers.css'
+import HeaderLoggedIn from '../components/HeaderLoggedIn'
 
 function AddUser() {
   const history = useHistory()
+  //
+  // const [registerUsername, setRegisterUsername] = useState("");
+  // const [registerPassword, setRegisterPassword] = useState("");
+  //
   const [user, setUser] = useState({
     userName: '',
     email: '',
@@ -38,11 +42,23 @@ function AddUser() {
       communityName: user.communityName,
       contactMethod: user.contactMethod,
     }
+    // function addUser () {
+    //   Axios({
+    //     method: "GET",
+    //     withCredentials: true,
+    //     url: "http://localhost:3000/user",
+    //   }).then((res) => {
+    //     setUser(res.newUser);
+    //     console.log(res.newUser);
+    //   });
+    
     axios.post('/users', newUser) //put new item here
-   history.push("/login")
-  }
+    history.push("/login")
+    }
 
   return (
+    <>
+    <HeaderLoggedIn />
     <Container className="Container2">
       <div class='Registration-box'>
         <div>
@@ -134,11 +150,12 @@ function AddUser() {
           </div>
           </div>
           <div style={{textAlign: "center"}}>
-          <Button onClick={addUser}>Submit</Button>
+          <Button onClick={addUser}>Submit </Button>
           </div>
         </form>
       </div>
-      </Container>  
+      </Container>
+      </>  
   )
 }
 

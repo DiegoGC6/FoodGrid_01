@@ -2,7 +2,7 @@ import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 
-const Header = () => {
+const HeaderLoggedIn = () => {
   return (
     <header>
       <Navbar style={{backgroundColor: 'darkBlue'}} variant='dark' expand='lg' collapseOnSelect>
@@ -17,7 +17,13 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
               {/* the icons are from font-awesome in cdnjs.com */}
-              <LinkContainer to='/login'>
+
+              <LinkContainer to='/signout'>
+                <Nav.Link>
+                  <i className='fas fa-user'></i>Sign Out
+                </Nav.Link>
+              </LinkContainer>
+              {/* <LinkContainer to='/login'>
                 <Nav.Link>
                   <i className='fas fa-user'></i>Login
                 </Nav.Link>
@@ -27,9 +33,9 @@ const Header = () => {
                 <Nav.Link>
                   <i className='fas fa-user-plus'></i>SignUp
                 </Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
 
-              {/* <LinkContainer to='/listitems'>
+              <LinkContainer to='/listitems'>
                 <Nav.Link>
                   <i className='fas fa-solid fa-list ul'></i>List Items
                 </Nav.Link>
@@ -48,7 +54,7 @@ const Header = () => {
                 <Nav.Link>
                   <i className='fas fa-star'></i>New Item Post
                 </Nav.Link>
-              </LinkContainer> */}
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -57,4 +63,6 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderLoggedIn
+
+

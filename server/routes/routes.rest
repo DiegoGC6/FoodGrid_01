@@ -3,7 +3,7 @@ GET http://localhost:3001/users
 
 ###
 
-GET http://localhost:3001/items/skape
+GET http://localhost:3001/items
 
 ###
 
@@ -15,7 +15,7 @@ POST http://localhost:3001/items/
 Content-Type: application/json
 
  {
-    "itemName": "Blue ",
+    "itemName": "ORANGE ",
     "itemSize": "huge",
     "itemQuantity": 24,
     "userName": "team"

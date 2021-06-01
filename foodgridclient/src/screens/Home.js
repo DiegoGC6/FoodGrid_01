@@ -1,12 +1,13 @@
 import React from 'react'
-import CardOne from '../components/card'
-import {Row, Container, Image} from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import '../components/containers.css'
 import AboutUs from '../components/AboutUs'
+import Header from '../components/Header'
 
 function Home() {
   return (
     <>
+    <Header />
       <Row className="Margin">
         <AboutUs />
         <AboutUs />

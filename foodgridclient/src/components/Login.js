@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-import { Container, Form, Button } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
 import '../components/containers.css'
 import { useHistory } from 'react-router-dom'
+import Header from '../components/Header'
 
 function LoginUser() {
   const history = useHistory()
@@ -33,11 +34,15 @@ function LoginUser() {
     history.push("/LoggedIn")
   }
   return (
-    
+    <>
+    <Header />
     <Container className="Container2">
     <form>
   <section>
   <div class="form-group">
+  <div>  
+          <h2 style={{textAlign: "center"}}>Log In</h2>
+          </div>
     <div style={ {textAlign:'center'} }>  
       <label style={ {fontWeight: "bold"},{color: "white"}}>Email address</label>
     </div>  
@@ -68,6 +73,7 @@ function LoginUser() {
   </div>  
 </form>
 </Container>
+</>
 
   )
 }

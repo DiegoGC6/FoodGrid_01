@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import '../components/containers.css'
+import HeaderLoggedIn from '../components/HeaderLoggedIn'
 
 //import "./AddItem.css";
 
@@ -39,9 +40,12 @@ function AddItem() {
     
     history.push("/listitems")
   }
+  
 
   return (
-    <Container className="Container2">  
+    <>
+    <HeaderLoggedIn />
+     <Container className="Container2">  
       <div class='Registration-box'>
         <div>  
           <h2 style={{textAlign: "center"}}>Add Item</h2>
@@ -122,7 +126,8 @@ function AddItem() {
            </div>
         </form>
       </div>
-    </Container>  
+    </Container>
+    </>  
   )
 }
 

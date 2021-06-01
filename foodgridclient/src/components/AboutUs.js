@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import picture from '../images/cake.jpg'
 
 
@@ -25,4 +25,3 @@ export default AboutUs
 
 
 
-{/* <a href="http://localhost:3000/listitems" class="btn btn-primary" style={{alignContent: "center"}}>See Item</a> */}

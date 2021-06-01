@@ -1,7 +1,5 @@
 import React from 'react'
 import { Card, Image } from 'react-bootstrap'
-import CardImage from './search'
-
 import image from '../images/meat.jpeg'
 
 

@@ -1,13 +1,14 @@
 import React from 'react'
-import CardOne from '../components/card'
-import {Row, Container, Image} from 'react-bootstrap'
+import CardOne from '../components/CardOne'
+import { Row } from 'react-bootstrap'
 import '../components/containers.css'
-import AboutUs from '../components/AboutUs'
+import HeaderLoggedIn from '../components/HeaderLoggedIn'
 
 function LoggedIn() {
   return (
     <>
     <body className="body">
+      <HeaderLoggedIn />
       <Row className="Container">
         <CardOne />
         <CardOne />
