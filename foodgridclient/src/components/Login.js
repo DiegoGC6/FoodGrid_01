@@ -67,8 +67,6 @@ function LoginUser() {
   </div>
   </div>
   <div style={ {textAlign:'center'} }>  
-    {/* <button type="submit" class="btn btn-primary" onClick={{LogInUser}}>Submit</button>
-     */}
       <Button onClick={LogInUser}>Submit</Button>
   </div>  
 </form>

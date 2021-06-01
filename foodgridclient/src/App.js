@@ -7,6 +7,7 @@ import ListItems from './components/ListItems'
 import Home from './screens/Home'
 import OurChat from './screens/OurChat'
 import LoggedIn from './screens/LoggedIn'
+import AboutUs from './components/AboutUs'
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/listitems' exact component={ListItems} />
             <Route path='/additem' exact component={AddItem} />
             <Route path='/chat' exact component={OurChat} />
+            <Route path='/aboutus' exact component={AboutUs} />
           </Switch >
       </Router> 
     </>

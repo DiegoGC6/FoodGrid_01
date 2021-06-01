@@ -49,6 +49,11 @@ const Header = () => {
                   <i className='fas fa-star'></i>New Item Post
                 </Nav.Link>
               </LinkContainer> */}
+              <LinkContainer to='/aboutus'>
+                <Nav.Link>
+                  <i className='fas fa-star'></i>New Item Post
+                </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -58,3 +63,4 @@ const Header = () => {
 }
 
 export default Header
+

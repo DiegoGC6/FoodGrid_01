@@ -50,9 +50,9 @@ const HeaderLoggedIn = () => {
                   <i className='fas fa-users'></i>Chat Messages
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to='/mypost'>
+              <LinkContainer to='/aboutus'>
                 <Nav.Link>
-                  <i className='fas fa-star'></i>New Item Post
+                  <i className='fas fa-star'></i>About Us
                 </Nav.Link>
               </LinkContainer>
             </Nav>

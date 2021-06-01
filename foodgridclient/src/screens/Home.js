@@ -1,18 +1,19 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import '../components/containers.css'
-import AboutUs from '../components/AboutUs'
+import CardTwo from '../components/CardTwo'
 import Header from '../components/Header'
+
 
 function Home() {
   return (
     <>
     <Header />
       <Row className="Margin">
-        <AboutUs />
-        <AboutUs />
-        <AboutUs />
-        <AboutUs />
+        <CardTwo />
+        <CardTwo />
+        <CardTwo />
+        <CardTwo />
       </Row>    
     </> 
   )

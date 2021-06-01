@@ -28,7 +28,7 @@ function ListItems() {
   }
 
   return items.map((item) => {
-    return (
+    return (      
       <div style={{ marginLeft: 50 }}>
         <h1>{item.itemName}</h1>
         <p>Size: {item.itemSize}</p>
