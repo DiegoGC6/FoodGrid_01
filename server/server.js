@@ -13,6 +13,5 @@ const itemsRouter = require("./routes/items");
 app.use("/items", itemsRouter);
 app.use("/users", usersRouter);
 
-app.listen(PORT, function () {
-  console.log(`Express is running and listening on port: ${PORT}`);
-});
+app.listen(PORT, () =>  console.log(`Express is running and listening on port: ${PORT}`))
+

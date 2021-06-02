@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Button, Container } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import '../components/containers.css'
-import HeaderLoggedIn from '../components/HeaderLoggedIn'
+import Header from '../components/Header'
 
 function AddUser() {
   const history = useHistory()
@@ -58,7 +58,7 @@ function AddUser() {
 
   return (
     <>
-    <HeaderLoggedIn />
+    <Header />
     <Container className="Container2">
       <div class='Registration-box'>
         <div>

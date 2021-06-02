@@ -1,5 +1,8 @@
 import React from 'react'
 import CardOne from '../components/CardOne'
+import CardTwo from '../components/CardTwo'
+import CardThree from '../components/CardThree'
+import CardFour from '../components/CardFour'
 import { Row } from 'react-bootstrap'
 import '../components/containers.css'
 import HeaderLoggedIn from '../components/HeaderLoggedIn'
@@ -7,17 +10,15 @@ import HeaderLoggedIn from '../components/HeaderLoggedIn'
 function LoggedIn() {
   return (
     <>
-    <body className="body">
+    
       <HeaderLoggedIn />
-      <Row className="Container">
-        <CardOne />
-        <CardOne />
-        <CardOne />
-        <CardOne />
-        <CardOne />
-        <CardOne />
+      <Row >        
+        <CardOne />    
+        <CardTwo />
+        <CardThree />
+        <CardFour />       
       </Row>
-    </body>    
+        
     </> 
   )
 }

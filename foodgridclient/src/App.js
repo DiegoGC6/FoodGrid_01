@@ -8,6 +8,8 @@ import Home from './screens/Home'
 import OurChat from './screens/OurChat'
 import LoggedIn from './screens/LoggedIn'
 import AboutUs from './components/AboutUs'
+import Technologies from './components/Technologies'
+import SignOut from './components/SignOut'
 
 
 
@@ -24,6 +26,8 @@ function App() {
             <Route path='/additem' exact component={AddItem} />
             <Route path='/chat' exact component={OurChat} />
             <Route path='/aboutus' exact component={AboutUs} />
+            <Route path='/technologies' exact component={Technologies} />
+            <Route path='/signout' exact component={SignOut} />
           </Switch >
       </Router> 
     </>

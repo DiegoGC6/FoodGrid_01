@@ -1,8 +1,8 @@
 import React from 'react'
-import { Image, Container } from 'react-bootstrap'
+import { Row, Container } from 'react-bootstrap'
 import kinhhypicture from '../images/KinhHyChau.jpg'
-import diegopicture from '../images/diego.jpg'
-import HeaderLoggedIn from './HeaderLoggedIn'
+import diegopicture from '../images/diegotwo.jpeg'
+import Header from './Header'
 import markpicture from '../images/Mark_Peterson.jpeg'
 import marcpicture from '../images/Marc_Ranger.jpg'
 
@@ -10,10 +10,10 @@ import marcpicture from '../images/Marc_Ranger.jpg'
 function AboutUs () {
   return (
     <>
-      <HeaderLoggedIn />
+      <Header />
       <Container>
         {/* <main role="main"> */}
-
+    
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">FoodGrid</h1>
@@ -30,41 +30,10 @@ function AboutUs () {
             </p>
           </div>
         </section>
+        
         <div class="album py-5 bg-light">
           <div class="container">
             <div class="row">
-              {/* <div class="col-md-4">
-                <div>
-                  <img
-                    class="card-img-top"
-                    src={kinhhypicture}
-                    alt="Card image cap"
-                  ></img>
-                  <h3>KinhHy Chau</h3>
-                  <div class="card-body">
-                    <p class="card-text">
-                    A newbie of Web developer world. A member of Cohort 6 now
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Edit
-                        </button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <div class="col-md-4">
                 <div>
                   <img
@@ -74,7 +43,7 @@ function AboutUs () {
                   ></img>
                   <div class="card-body">
                     <h3>KinhHy Chau</h3>
-                    <p class="card-text">A newbie of Web developer world. A member of Cohort 6 now</p>
+                    <p class="card-text">A newbie of Web developer world. A learner of Cohort 6</p>
                     <div class="d-flex justify-content-between align-items-center"></div>
                   </div>
                 </div>
@@ -128,19 +97,19 @@ function AboutUs () {
               </div>
             </div>
           </div>
+          
         </div>
+        
         <footer class="text-muted">
           <div class="container">
             <p class="float-right">
               <a href="#">Back to top</a>
             </p>
             <p>
-              Album example is &copy; Bootstrap, but please download and
-              customize it for yourself!
+            <a href="../../">Visit the homepage</a>
             </p>
             <p>
-              New to Bootstrap? <a href="../../">Visit the homepage</a> or read
-              our <a href="../../getting-started/">getting started guide</a>.
+              Technologies used to build this site  <a href="../../technologies">Learn More</a>.
             </p>
           </div>
         </footer>

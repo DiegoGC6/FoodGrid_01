@@ -22,36 +22,14 @@ const Header = () => {
                   <i className='fas fa-user'></i>Login
                 </Nav.Link>
               </LinkContainer>
-
               <LinkContainer to='/register'>
                 <Nav.Link>
                   <i className='fas fa-user-plus'></i>SignUp
                 </Nav.Link>
               </LinkContainer>
-
-              {/* <LinkContainer to='/listitems'>
-                <Nav.Link>
-                  <i className='fas fa-solid fa-list ul'></i>List Items
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/additem'>
-                <Nav.Link>
-                  <i className='fas fa-plus'></i>Post Item
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/chat'>
-                <Nav.Link>
-                  <i className='fas fa-users'></i>Chat Messages
-                </Nav.Link>
-              </LinkContainer>
-              <LinkContainer to='/mypost'>
-                <Nav.Link>
-                  <i className='fas fa-star'></i>New Item Post
-                </Nav.Link>
-              </LinkContainer> */}
               <LinkContainer to='/aboutus'>
                 <Nav.Link>
-                  <i className='fas fa-star'></i>New Item Post
+                  <i className='fas fa-star'></i>About Us
                 </Nav.Link>
               </LinkContainer>
             </Nav>

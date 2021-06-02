@@ -20,7 +20,7 @@ const HeaderLoggedIn = () => {
 
               <LinkContainer to='/signout'>
                 <Nav.Link>
-                  <i className='fas fa-user'></i>Sign Out
+                  <i className='fas fa-sign-out-alt'></i>Sign Out
                 </Nav.Link>
               </LinkContainer>
               {/* <LinkContainer to='/login'>
