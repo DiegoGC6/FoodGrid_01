@@ -1,13 +1,14 @@
-import React from "react";
-import { LinkContainer, Link } from "react-router-bootstrap";
-import { Row, Container, Button, Nav } from "react-bootstrap";
-import kinhhypicture from "../images/KinhHyChau.jpg";
-import diegopicture from "../images/diegotwo.jpeg";
-import Header from "./Header";
-import markpicture from "../images/Mark_Peterson.jpeg";
-import marcpicture from "../images/Marc_Ranger.jpg";
+import React from 'react'
+import { LinkContainer, Link } from 'react-router-bootstrap'
+import { Row, Container, Button, Nav} from 'react-bootstrap'
+import kinhhypicture from '../images/KinhHyChau.jpg'
+import diegopicture from '../images/diegotwo.jpeg'
+import Header from './Header'
+import markpicture from '../images/Mark_Peterson.jpeg'
+import marcpicture from '../images/Marc_Ranger.jpg'
 
-function AboutUs() {
+
+function AboutUs () {
   return (
     <>
       <Header />
@@ -110,16 +111,16 @@ function AboutUs() {
               Technologies used to build this site{" "}
               <a href="../../technologies">Learn More</a>.
             </p> */}
-
-            <p class="float-right">
-              <LinkContainer to="/technologies">
-                <Nav.Link>Technologies used to build</Nav.Link>
-              </LinkContainer>
-            </p>
+          <LinkContainer to='/technologies'>
+            <Nav.Link >Technologies used to build</Nav.Link>
+          </LinkContainer>  
           </div>
         </footer>
       </Container>
     </>
   );
 }
-export default AboutUs;
+export default AboutUs
+
+
+
