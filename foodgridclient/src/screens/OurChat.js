@@ -1,6 +1,7 @@
 import React from 'react'
 import { StreamChat } from 'stream-chat'
-import {
+import HeaderLoggedIn from '../components/HeaderLoggedIn'
+import {  
   Chat,
   Channel,
   ChannelHeader,
@@ -34,18 +35,21 @@ const channel = chatClient.channel('messaging', 'orange-block-7', {
 })
 
 const OurChat = () => (
+  <>
+  <HeaderLoggedIn />
   <div style={{height:"350px;",width:"900px", marginRight: "500px", marginLeft: "500px", padding: "0", backgroundColor: "red"}}>
-    <Chat client={chatClient} theme='messaging light'>
-      <Channel channel={channel}>
-        <Window>
-          <ChannelHeader />
-          <MessageList />
-          <MessageInput />
-        </Window>
-        <Thread />
-      </Channel>
-    </Chat>
-  </div>  
+      <Chat client={chatClient} theme='messaging light'>
+        <Channel channel={channel}>
+          <Window>
+            <ChannelHeader />
+            <MessageList />
+            <MessageInput />
+          </Window>
+          <Thread />
+        </Channel>
+      </Chat>
+    </div>
+  </>    
 )
 
 export default OurChat

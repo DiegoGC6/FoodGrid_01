@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Container } from 'react-bootstrap'
+import { LinkContainer, Link } from 'react-router-bootstrap'
+import { Row, Container, Button, Nav} from 'react-bootstrap'
 import kinhhypicture from '../images/KinhHyChau.jpg'
 import diegopicture from '../images/diegotwo.jpeg'
 import Header from './Header'
@@ -13,7 +14,7 @@ function AboutUs () {
       <Header />
       <Container>
         {/* <main role="main"> */}
-    
+
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">FoodGrid</h1>
@@ -30,7 +31,7 @@ function AboutUs () {
             </p>
           </div>
         </section>
-        
+
         <div class="album py-5 bg-light">
           <div class="container">
             <div class="row">
@@ -43,7 +44,9 @@ function AboutUs () {
                   ></img>
                   <div class="card-body">
                     <h3>KinhHy Chau</h3>
-                    <p class="card-text">A newbie of Web developer world. A learner of Cohort 6</p>
+                    <p class="card-text">
+                      A newbie of Web developer world. A learner of Cohort 6
+                    </p>
                     <div class="d-flex justify-content-between align-items-center"></div>
                   </div>
                 </div>
@@ -88,29 +91,29 @@ function AboutUs () {
                   ></img>
                   <div class="card-body">
                     <h3>Mark Peterson</h3>
-                    <p class="card-text">
-                      -----------------------------
-                    </p>
-
+                    <p class="card-text">-----------------------------</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-        
+
         <footer class="text-muted">
           <div class="container">
             <p class="float-right">
               <a href="#">Back to top</a>
             </p>
             <p>
-            <a href="../../">Visit the homepage</a>
+              <a href="../../">Visit the homepage</a>
             </p>
-            <p>
-              Technologies used to build this site  <a href="../../technologies">Learn More</a>.
-            </p>
+            {/* <p>
+              Technologies used to build this site{" "}
+              <a href="../../technologies">Learn More</a>.
+            </p> */}
+          <LinkContainer to='/technologies'>
+            <Nav.Link >Technologies used to build</Nav.Link>
+          </LinkContainer>  
           </div>
         </footer>
       </Container>

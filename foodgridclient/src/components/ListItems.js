@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import {Container} from 'react-bootstrap'
 import axios from "axios";
+import HeaderLoggedIn from './HeaderLoggedIn'
 
 function ListItems() {
   const [items, setItems] = useState([
@@ -27,8 +29,13 @@ function ListItems() {
     alert("item deleted");
   }
 
-  return items.map((item) => {
+  return  items.map((item) => { 
+    
     return (      
+    <>
+      
+        <Container className="Container2">
+      
       <div style={{ marginLeft: 50 }}>
         <h1>{item.itemName}</h1>
         <p>Size: {item.itemSize}</p>
@@ -38,8 +45,13 @@ function ListItems() {
         <p>Posted on: {item.postDate}</p>
         <button onClick={() => deleteItem(item._id)}>DELETE ITEM</button>
       </div>
+    
+        </Container>
+    </>
     );
+  
   });
+  
 }
 
 export default ListItems;
