@@ -13,8 +13,8 @@ function CardOne() {
     <div class={{Card}} style={{width: "18rem"}}>
     <Image src={image} class="Img" alt="can't find img"/>
     <div class="card-body">
-      <h5 class="card-title">Tuna</h5>
-      <p class="card-text">Canned Tuna. light chunks. pick up in bridgeland</p>
+      <h5 class="card-title">Sugar</h5>
+      <p class="card-text">Too much to handle, please sweet up!</p>
 
         <LinkContainer to='/listitems'>
           <Button>Items</Button>

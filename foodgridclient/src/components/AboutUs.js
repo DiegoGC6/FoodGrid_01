@@ -6,6 +6,7 @@ import diegopicture from "../images/diegotwo.jpeg";
 import Header from "./Header";
 import markpicture from "../images/Mark_Peterson.jpeg";
 import marcpicture from "../images/Marc_Ranger.jpg";
+import './containers.css'
 
 function AboutUs() {
   return (
@@ -30,10 +31,10 @@ function AboutUs() {
             </p>
           </div>
         </section>
-
-        <div class="album py-5 bg-light">
+      <div style= {{background: "linear-gradient(to left, #6699cc,rgb(161, 237, 241) 50%, rgb(161, 237, 241) 50%, #6699cc 75%)"}}>
+        <div class="album py-5">
           <div class="container">
-            <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
               <div class="col-md-4">
                 <div>
                   <img
@@ -44,7 +45,8 @@ function AboutUs() {
                   <div class="card-body">
                     <h3>KinhHy Chau</h3>
                     <p class="card-text">
-                      A newbie of Web developer world. A learner of Cohort 6
+                    DIRECTOR OF TALENT DEVELOPMENT
+
                     </p>
                     <div class="d-flex justify-content-between align-items-center"></div>
                   </div>
@@ -59,13 +61,13 @@ function AboutUs() {
                   ></img>
                   <div class="card-body">
                     <h3>Diego Gomez</h3>
-                    <p class="card-text">Diego is a learner at EvolveU</p>
+                    <p class="card-text">CO-FOUNDER AND PRESIDENT</p>
                     <div class="d-flex justify-content-between align-items-center"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
               <div class="col-md-4">
                 <div>
                   <img
@@ -76,7 +78,7 @@ function AboutUs() {
                   <div class="card-body">
                     <h3>Marc Ranger</h3>
                     <p class="card-text">
-                      A senior IT professional with over 25 years experience.
+                    CO-FOUNDER AND CEO
                     </p>
                   </div>
                 </div>
@@ -90,11 +92,12 @@ function AboutUs() {
                   ></img>
                   <div class="card-body">
                     <h3>Mark Peterson</h3>
-                    <p class="card-text">-----------------------------</p>
+                    <p class="card-text">DIRECTOR OF OFFICE SUPPLIES REPLENISHMENT
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
 
@@ -118,6 +121,8 @@ function AboutUs() {
             </p>
           </div>
         </footer>
+        </div>
+
       </Container>
     </>
   );

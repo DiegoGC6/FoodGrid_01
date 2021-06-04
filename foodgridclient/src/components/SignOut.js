@@ -1,8 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import image from '../images/signouttwo.png'
-import { Row, Container, Button, Nav} from 'react-bootstrap'
-import { Footer } from 'react-router-bootstrap'
+
 
 
 export default function Technologies() {
@@ -15,7 +14,7 @@ export default function Technologies() {
         <footer>
         <div class="container">
             <p class="float-right">
-              <a href="../../aboutus">Back</a>
+              <a href="../../">Back to Home</a>
             </p>
             </div>
         </footer>

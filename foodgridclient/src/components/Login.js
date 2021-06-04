@@ -41,7 +41,7 @@ function LoginUser() {
   <section>
   <div class="form-group">
   <div>  
-          <h2 style={{textAlign: "center"}}>Log In</h2>
+          <h2 style={{textAlign: "center"}}>Sign In</h2>
           </div>
     <div style={ {textAlign:'center'} }>  
       <label style={ {fontWeight: "bold"},{color: "white"}}>Email address</label>

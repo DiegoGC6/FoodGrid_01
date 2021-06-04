@@ -7,7 +7,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #ababab;
+  background: linear-gradient(to left, #6699cc,rgb(161, 237, 241) 50%, rgb(161, 237, 241) 50%, #6699cc 75%);
 }
 .Margin{
   padding-top: 10px;
@@ -21,7 +21,7 @@
   display: flex;
   width: 5rem;
   justify-content: center;
-  background-color: #ababab;
+  background: linear-gradient(to left, #6699cc,rgb(161, 237, 241) 50%, rgb(161, 237, 241) 50%, #6699cc 75%);
   }
 
   .center {
@@ -35,4 +35,14 @@
   .Img{
     width: 300px;
     height: 400px;
+  }
+
+  .Container3{
+    margin: 200px;
+  height: 425PX;
+  
+  display: block;
+  width: 5rem;
+  justify-content: center;
+  background: linear-gradient(to left, #6699cc,rgb(161, 237, 241) 50%, rgb(161, 237, 241) 50%, #6699cc 75%);
   }

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Row, Container } from 'react-bootstrap'
+
 import '../components/containers.css'
-import CardTwo from '../components/CardTwo'
+
 import Header from '../components/Header'
-import image from '../images/homescren.png'
+import image from '../images/homescreen.png'
 
 
 function Home() {

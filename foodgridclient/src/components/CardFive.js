@@ -1,20 +1,22 @@
 import React from 'react'
-import { Card, Image, Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import image from "../images/soup.jpg";
+import { Card, Image, Button } from 'react-bootstrap'
+import image from '../images/sauce.jpg'
 import '../components/containers.css'
 
 
-
-function CardTwo () {
+function CardFive() {
   return (
-    <>
-      <div class="Img">
+    
+    <div class="Img">
     <div class={{Card}} style={{width: "18rem"}}>
     <Image src={image} class="Img" alt="can't find img"/>
     <div class="card-body">
-      <h5 class="card-title">Canned goods</h5>
-      <p class="card-text">Some extra cans left from camp. pick up near bowness</p>
+      <h5 class="card-title">PASTA SAUCE</h5>
+      <p class="card-text">Extra sauce I won't be using and I'd like to not see it go to waste!
+      
+      
+      </p>
 
         <LinkContainer to='/listitems'>
           <Button>Items</Button>
@@ -23,13 +25,10 @@ function CardTwo () {
     </div>
   </div>
   </div>
-    </>
-  );
+  
+  
+   
+  
+  )
 }
-
-export default CardTwo
-
-
-
-
-
+export default CardFive
